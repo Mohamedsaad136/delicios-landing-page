@@ -1,0 +1,692 @@
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(5px);
+}
+
+.image {
+    width: 15%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 160px;
+}
+
+nav ul {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+nav ul li {
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 15px 20px;
+    transition: 0.4s;
+}
+
+nav ul li:hover {
+    color: rgb(34, 34, 34);
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+
+.first-button {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.first-button button {
+    background-image: linear-gradient(to left, #00D1FF, #1A83FF 50%);
+    padding: 5px 15px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+.first-button:hover button{
+    cursor: pointer;
+    background-image: linear-gradient(to right, #00D1FF, #1A83FF 50%);
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    align-items: center;
+}
+
+section h2 {
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 90px;
+    text-transform: capitalize;
+}
+
+section p {
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.second-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.second-button button {
+    background-image: linear-gradient(to left, #00D1FF, #1A83FF 50%);
+    padding: 5px 15px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.circul {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    /* border: 8px solid ; */
+    background: linear-gradient(to bottom, #2ed9ff, #1A83FF 50%);
+    z-index: -1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circul::after {
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.bottels-container {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+}
+
+.bottel-left {
+    width: 20%;
+    margin-left: 8%;
+    margin-bottom: 2%;
+}
+
+.bottel-left img {
+    transform: translateY(15px);
+}
+
+.bottel-left::after {
+    content: "";
+    width: 150px;
+    position: absolute;
+    top: 15px;
+    left: 5.5%;
+    height: 150Px;
+    background-image: linear-gradient(#2ed9ff, #1A83FF 50%);
+    border-radius: 50%;
+    z-index: -10;
+}
+
+.bottel-right {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 8%;
+    margin-bottom: 2%;
+}
+
+.bottel-right img {
+    width: 100px;
+    height: 150px;
+    object-fit: contain;
+    transform: translateY(10px);
+}
+
+.bottel-right::after {
+    content: "";
+    width: 150px;
+    position: absolute;
+    top: 10px;
+    transform: translateX(20px);
+    height: 150Px;
+    background-image: linear-gradient(#2ed9ff, #1A83FF 50%);
+    border-radius: 50%;
+    z-index: -10;
+}
+
+.section-two {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 15px 0px;
+    height: 100vh;
+    position: relative;
+}
+
+.bigone {
+    width: 50%;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+.bigone img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-two ul {
+    width: 50%;
+    height: 100%;
+    background-color: #20292C;
+    align-content: center;
+}
+
+.section-two ul li {
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 40px;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    margin-left: 25%;
+    padding: 25px 0px;
+}
+
+.section-two ul li img {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-self: center;
+    margin-right: 2%;
+    transform: translateY(1px);
+}
+
+.middleone {
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    bottom: 2.2%;
+}
+
+.middleone img {
+    height: 450px;
+}
+
+.section-three {
+    width: 100%;
+    min-height: 100vh;
+    padding: 35px 0px;
+}
+
+.row {
+    display: flex;
+    height: 15%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+    margin-left: 4%;
+}
+
+.text h2 {
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.text p {
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 50;
+    font-style: normal;
+    font-size: 20px;
+    transform: translateY(-10px);
+}
+
+.third-button {
+    margin-right: 4%;
+}
+
+.third-button button {
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 50;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    background-image: linear-gradient(to right, #00D1FF, #1A83FF 50%);
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+.third-button:hover button{
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.cards-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 5px;
+}
+
+.card {
+    padding: 10px;
+    width: 400px;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+.card:hover{
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.card p {
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 50;
+    font-style: normal;
+    font-size: 25px;
+    margin-left: 2%;
+}
+
+.card-button {
+    padding: 5px;
+}
+
+.card-button button {
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 50;
+    font-style: normal;
+    font-size: 15px;
+    color: white;
+    background-image: linear-gradient(to right, #00D1FF, #1A83FF 50%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+.card-button:hover button{
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.section-four{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 0px;
+    background-image: url(back.png);
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+.left-sec{
+    margin-left: 3%;
+    padding-right: 10px;
+    width: 50%;
+    margin-top: 8%;
+}
+.left-sec h2{
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 60px;
+}
+.left-sec h4{
+     font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+    margin-bottom: 5%;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+.left-sec p{
+    /* font-family: "Familjen Grotesk", sans-serif; */
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+}
+.sec-button{
+    margin-top: 5%;
+
+}
+.sec-button button{
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 50;
+    font-style: normal;
+    font-size: 15px;
+    color: white;
+    background-image: linear-gradient(to left, #00D1FF, #1A83FF 50%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+.sec-button:hover button{
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.right-sec{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+}
+.card-two{
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.205) 10%,rgba(255, 255, 255, 0.058));
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.card-two:hover{
+    cursor: pointer;
+    border: transparent;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.37);
+}
+.card-two h2{
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 60px;
+    padding: 0px 15px;
+}
+.card-two p{
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 25px;
+    padding-right: 15px;
+}
+.section-five{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-container{
+    width: 90%;
+    height: 90%;
+    background-color: #ffffff;
+    border-radius: 30px;
+    overflow: hidden;
+    align-content: center;
+}
+.sec{
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+}
+.sec:not(:last-child){
+    border-bottom: 2px solid rgb(173, 173, 173);
+}
+
+.sec-text{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+.sec-text h2{
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+    padding: 0px 15px;
+    color: #989c9e;
+}
+.sec-text h3{
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+.sec button
+{
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-right: 5%;
+    position: relative;
+    z-index: 1;
+    transition: 0.4s;
+}
+.sec button::after{
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    transform: translateX(12px) translateY(-11px);
+    background-image: linear-gradient(to left, #00D1FF, #1A83FF 50%);
+    border-radius: 50%;
+}
+.section-six{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-section{
+    width: 90%;
+    height: 90%;
+    background-image: linear-gradient( to right,#201f1fdb,#201F1F);
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50%;
+}
+.container h2{
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.container p{
+    /* font-family: "Familjen Grotesk", sans-serif; */
+    font-optical-sizing: auto;
+    font-weight: 50;
+    font-style: normal;
+    font-size: 14px;
+    padding: 0px 5px;
+}
+.input-container{
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.input{
+    width: 100%;
+    height: 100%;
+}
+.input p{
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 50;
+    font-style: normal;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 3px 0px;
+}
+.input input{
+    border: 1px solid rgb(114, 108, 108);
+    width: 60%;
+    padding: 5px 5px;
+    border-radius: 5px;
+    background-image: linear-gradient(to left,#8d8d8d4b,#343333 40%);
+}
+.input textarea{
+    border: 1px solid rgb(114, 108, 108);
+    width: 60%;
+    height: 140%;
+    padding: 5px 5px;
+    border-radius: 5px;
+    background-image: linear-gradient(to left,#8d8d8d4b,#343333 40%);
+}
+.rect-button button{
+    margin-top: 15%;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 50;
+    font-style: normal;
+    font-size: 15px;
+    color: white;
+    background-image: linear-gradient(to left, #00D1FF, #1A83FF 50%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.rect-button button:hover{
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #201F1F;
+    color: white
+}
+.upper{
+    display: flex;
+    justify-content: space-between;
+}
+.image{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.image img{
+    width: 150px;
+}
+#upper-list{
+    width: 31.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.lower{
+    display: flex;
+    justify-content: space-between;
+}
+.icons{
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 5%;
+}
+.icons i{
+    font-size: 20px;
+}
+.lower-list{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 15px;
+}
+.deep{
+    width: 100%;
+    transform: translateY(10px);
+    display: flex;
+    justify-content: center;
+    padding-top: 5px 0;
+    background-color: #323232;
+}
+.deep p{
+    color: #858585;
+    padding: 5px 0px;
+    font-weight: 100;
+    font-size: 12px;
+}
